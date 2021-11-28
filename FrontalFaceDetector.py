@@ -109,6 +109,7 @@ class FrontalFaceDetector:
         self.drawFace()
         self.drawEyes()
         self.drawMouth()
+        return self.img
     def drawMouth(self):
         mouth_coords = self.calculateMouthPosition()
         [x, y, w, h] = mouth_coords
